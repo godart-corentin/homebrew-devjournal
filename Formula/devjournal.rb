@@ -1,11 +1,12 @@
 class Devjournal < Formula
   desc "Automatic intelligent work diary for local git repositories"
   homepage "https://github.com/godart-corentin/dev-journal"
-  url "https://github.com/godart-corentin/dev-journal/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "2b507a764bf3399480c71c4a09b0c8b85086f2a4e3c490d2b7a52993fdbbeeb4"
+  url "https://github.com/godart-corentin/dev-journal/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "6ba0ef191f92e36b4e87816a2d4184ea330b96844b852fd4b0d419bfde049cef"
   license "Apache-2.0"
   head "https://github.com/godart-corentin/dev-journal.git", branch: "main"
 
+  depends_on "pkgconf" => :build
   depends_on "rust" => :build
 
   def install
